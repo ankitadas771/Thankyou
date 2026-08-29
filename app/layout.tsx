@@ -3,8 +3,8 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'For Kiana 🌙 — A Rare Bloom',
-  description: 'A little bloom for a Love with real potential.',
+  title: 'For Ayushi 🌙 — A Rare Bloom',
+  description: 'A little bloom for a Friendship with real potential.',
   generator: 'v0.app',
 }
 

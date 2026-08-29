@@ -5,17 +5,17 @@ import { RotateCcw, Sparkles } from 'lucide-react'
 import { useState } from 'react'
 
 const flowerNotes = [
-  { type: 'lily', color: 'pink', label: 'First Lily', text: 'Hello, cutie i know you are angry to touch the flowers next to me. Oh you are not?? Touch it' },
-  { type: 'tulip', color: '#fb8500', label: 'Orange Tulip', text: 'Am soo sorryy for being rude at times due to things i cant explain but the next flower knows one thing.. ' },
-  { type: 'lily', color: 'pink', label: 'Second Lily', text: 'That, i love you the mosttt. And the next knows' },
-  { type: 'tulip', color: '#ffb703', label: 'Yellow Tulip', text: 'How much i miss you everyday.. ' },
-  { type: 'tulip', color: '#e63946', label: 'Red Tulip', text: ' Ik you expect me outside when you get put of that office door.. but' },
-  { type: 'lily', color: 'pink', label: 'Third Lily', text: 'I am trying my level best to meet you jaan.. ' },
-  { type: 'tulip', color: '#9d4edd', label: 'Purple Tulip', text: 'Please raag korona..' },
-  { type: 'tulip', color: '#ff006e', label: 'Magenta Tulip', text: 'I will be thereeeee forever!! ' },
-  { type: 'lily', color: 'pink', label: 'Fourth Lily', text: 'I' },
-  { type: 'tulip', color: '#3a86ff', label: 'Blue Tulip', text: ' Love ' },
-  { type: 'tulip', color: '#4cc9f0', label: 'Cyan Tulip', text: 'Youuuu!! ;)' },
+  { type: 'lily', color: 'pink', label: 'First Lily', text: 'Ayushi, your presence alone brings so much calm and positivity into  life. Thank you for always being there to help me navigate tough moments.' },
+  { type: 'tulip', color: '#fb8500', label: 'Orange Tulip', text: 'Thanks for listening to my naggings. ' },
+  { type: 'lily', color: 'pink', label: 'Second Lily', text: 'I cherish every laugh and serious conversation we shared during our college days. Those memories are something I will always hold close.' },
+  { type: 'tulip', color: '#ffb703', label: 'Yellow Tulip', text: 'Even though college is wrapping up, I am so glad we decided to keep this friendship going. It has incredible potential for the future. ' },
+  { type: 'tulip', color: '#e63946', label: 'Red Tulip', text: ' Honestly i feel good when talking to you, thats why talk so much with you ' },
+  { type: 'lily', color: 'pink', label: 'Third Lily', text: 'i just want the best for you no matter we are together or not' },
+  { type: 'tulip', color: '#9d4edd', label: 'Purple Tulip', text: 'You made me angry a lot of times but the good times were worth it' },
+  { type: 'tulip', color: '#ff006e', label: 'Magenta Tulip', text: ' You are destined to achieve extraordinary things. ' },
+  { type: 'lily', color: 'pink', label: 'Fourth Lily', text: 'No matter what changes, I want you in my corner' },
+  { type: 'tulip', color: '#3a86ff', label: 'Blue Tulip', text: ' Thank you for always helping me figure things out when things got complicated...' },
+  { type: 'tulip', color: '#4cc9f0', label: 'Cyan Tulip', text: 'Here is to us, our shared growth, and a beautiful friendship that is only just beginning. You mean the world to me, Ayushi.' },
 ]
 
 function Lily({ reduced, delay = 0, className = '', onPick }: { reduced: boolean; delay?: number; className?: string; onPick: () => void }) {
@@ -116,14 +116,14 @@ export default function Page() {
       
       <header className="gift-header">
         <p className="eyebrow"><Sparkles size={14} strokeWidth={1.5} /> A little something for you</p>
-        <h1>For Kiana 🌙</h1>
+        <h1>For Ayushi 🌙</h1>
         <p className="subtitle">A lush meadow, growing with our bond</p>
       </header>
 
       {/* Message Card Appears Above the Flowers */}
       <div className="message-container">
         {currentNote ? (
-          <motion.div className="love-message" role="status" initial={{ opacity: 0, y: -18, scale: .96 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: .55 }}>
+          <motion.div className="Friendship-message" role="status" initial={{ opacity: 0, y: -18, scale: .96 }} animate={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: .55 }}>
             <p className="message-kicker">Note from the {currentNote.label}</p>
             <p>{currentNote.text}</p>
           </motion.div>
